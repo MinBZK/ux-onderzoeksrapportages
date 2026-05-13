@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(quarto render *)",
+      "Bash(quarto --paths)",
+      "Bash(grep -rIn -i \"categor\" /Applications/quarto/share/translations/ | grep -iE \"nl|en\" | head -20)",
+      "Read(//Applications/quarto/share/**)",
+      "Bash(quarto preview *)",
+      "Bash(xargs -I{} kill {})",
+      "Bash(xargs -I{} kill -9 {})",
+      "Bash(curl -s http://localhost:6081/)",
+      "Bash(curl -s http://localhost:6081/ -o /tmp/uxor-index.html)",
+      "Read(//tmp/**)"
+    ]
+  }
+}

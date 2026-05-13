@@ -1,0 +1,22 @@
+---
+title: "Over deze site"
+---
+
+Deze site verzamelt onderzoeksrapporten van gebruikersonderzoek bij de Rijksoverheid. Het doel is om rapportages eenvoudig online aan te bieden in plaats van als losse PDF's, zodat:
+
+- er altijd één actuele versie is
+- rapporten makkelijk vindbaar zijn via zoeken
+- ze gedeeld kunnen worden via een stabiele URL
+- updates direct zichtbaar zijn voor iedereen
+
+## Een rapport toevoegen
+
+Maak een nieuw bestand aan in de map `rapporten/`, bijvoorbeeld `rapporten/mijn-onderzoek.qmd`. Gebruik het bestaande voorbeeldrapport als sjabloon.
+
+De volgende velden in de YAML-header zorgen dat een rapport correct verschijnt op de overzichtspagina:
+
+- `title` — titel van het rapport
+- `description` — korte samenvatting (verschijnt op de overzichtspagina)
+- `author` — naam van de onderzoeker(s)
+- `date` — datum van publicatie (`YYYY-MM-DD`)
+- `categories` — onderwerpen of methodes, bijvoorbeeld `[usability, prototype]`

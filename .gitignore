@@ -1,0 +1,8 @@
+/.quarto/
+/_site/
+/_freeze/
+**/*.quarto_ipynb
+_quarto_internal_*.scss
+.DS_Store
+.Rproj.user
+.positai

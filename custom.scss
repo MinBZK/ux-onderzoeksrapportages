@@ -1,0 +1,483 @@
+/*-- scss:defaults --*/
+
+$primary: #154273;
+$font-family-base: "RijksSansVF", sans-serif;
+$body-bg: #fff;
+$body-color: #3b3b3b;
+$border-radius: 0;
+$font-weight-normal: 400;
+$font-weight-semibold: 450;
+$font-weight-bold: 500;
+
+/*-- scss:rules --*/
+
+@font-face {
+  font-family: "RijksSansVF";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("https://proef.moza.rijksapp.dev/assets/fonts/RijksSansVF-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RijksSansVF";
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("https://proef.moza.rijksapp.dev/assets/fonts/RijksSansVF-Italic.ttf") format("truetype");
+}
+
+
+// LAYOUT
+
+body:not(:has(.quarto-listing)) {
+	#quarto-margin-sidebar {
+		display: none;
+	}
+	main.content {
+		grid-column: body-content-start / page-end;
+	}
+}
+body:has(.quarto-listing) {
+	#quarto-margin-sidebar {
+		grid-column: page-start / body-start;
+	}
+	main.content {
+		grid-column: body-content-start / page-end;
+	}
+}
+
+div.quarto-post .listing-description {
+	margin-block: var(--toepassing-space-margin-2xs);
+}
+.quarto-listing-default .quarto-post.image-right {
+	flex-direction: column;
+}
+.listing-description p {
+	margin-block-end: 0;
+}
+
+#title-block-header.quarto-title-block.default {
+	.quarto-title-meta-author,
+	.quarto-title-meta {
+		grid-template-columns: unset;
+	}
+}
+
+
+// TYPOGRAFIE
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	-webkit-line-clamp: 2;
+	border: 0;
+	display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; 
+	font: var(--toepassing-text-heading-h1);
+	line-clamp: 2; /* Beperkt titels en kopteksten tot maximaal twee regels tekst */
+}
+h2 {
+	font: var(--toepassing-text-heading-h2);
+}
+h3 {
+	font: var(--toepassing-text-heading-h3);
+}
+h4 {
+	font: var(--toepassing-text-heading-h4);
+}
+h5 {
+	font: var(--toepassing-text-heading-h5);
+}
+h6 {
+	font: var(--toepassing-text-heading-h6);
+}
+
+p {
+	font: var(--toepassing-text-paragraph-default);
+}
+
+ul, ol {
+	padding: 0;
+	::marker {
+		color: var(--toepassing-color-text-subtle-2);
+		font-size: var(--rijkshuisstijl-text-font-size-md);
+	}
+}
+
+blockquote {
+	margin-block-end: var(--toepassing-space-margin-2xs);
+	p {
+		font-size: var(--toepassing-text-size-body-lg);
+		font-style: italic;
+	}
+}
+
+hr {
+	color: var(--toepassing-color-border-default);
+}
+
+.sidebar nav[role=doc-toc]>h2, .nav-link {
+	font-size: var(--toepassing-text-size-body-md);
+}
+
+.sidebar nav[role=doc-toc]>h2,
+#quarto-margin-sidebar .quarto-listing-category-title {
+	font-weight: var(--toepassing-text-font-weight-semi-bold);
+}
+
+// Links
+a {
+	color: var(--toepassing-color-interactive-default-text);
+	text-decoration-color: transparent;
+	transition: var(--toepassing-transition-default);
+	&:hover {
+		text-decoration: var(--toepassing-text-decoration-hyperlink);
+	}
+}
+:hover>.anchorjs-link,
+.anchorjs-link {
+	transition: var(--toepassing-transition-opacity);
+}
+.listing-title a,
+div.quarto-post h3 a {
+	color: var(--toepassing-color-interactive-default-text);
+	&:hover {
+		text-decoration: var(--toepassing-text-decoration-hyperlink) !important;
+	}
+}
+.quarto-listing-category .category:hover {
+	text-decoration: underline;
+}
+
+li:has(> a[href$=".pdf"]),
+li:has(> a[href$=".doc"]),
+li:has(> a[href$=".docx"]),
+li:has(> a[href$=".xls"]),
+li:has(> a[href$=".xlsx"]) {
+	list-style: none;
+}
+a[href$=".pdf"],
+a[href$=".xls"],
+a[href$=".xlsx"],
+a[href$=".doc"],
+a[href$=".docx"] {
+	&::before {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		block-size: var(--toepassing-size-icon-md);
+		content: "";
+		display: inline-block;
+		inline-size: var(--toepassing-size-icon-md);
+		margin-inline-end: var(--toepassing-space-layout-2xs);
+		vertical-align: middle;
+	}
+}
+a[href$=".pdf"]::before {
+	background-image: url("/assets/icons/icon-filetype-pdf.svg");
+}
+a[href$=".doc"]::before,
+a[href$=".docx"]::before {
+	background-image: url("/assets/icons/icon-filetype-word.svg");
+}
+a[href$=".xls"]::before,
+a[href$=".xlsx"]::before {
+	background-image: url("/assets/icons/icon-filetype-excel.svg");
+}
+
+
+// PAGINA HEADER EN HOOFDNAV
+
+.rijks-banner-container {
+  align-items: center;
+  display: flex;
+  margin-block-end: var(--toepassing-space-margin-md);
+  a {
+	margin-inline: auto;
+  }
+  img {
+	block-size: auto;
+	display: block;
+	inline-size: 48px;
+  }
+}
+
+#quarto-header.fixed-top {
+  position: static;
+}
+
+body.nav-fixed {
+  padding-top: 0 !important;
+}
+
+.navbar-container, #quarto-content {
+  margin-inline: auto;
+  max-inline-size: 71.25rem;
+}
+
+.navbar-brand-container .navbar-brand {
+	pointer-events: none;
+	cursor: default;
+}
+.navbar-brand, .navbar .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+	color: var(--toepassing-color-text-inverse);
+	font-size: var(--toepassing-text-size-body-lg);
+}
+.navbar-nav .nav-link.active {
+	text-decoration: unset;
+	text-decoration: var(--toepassing-text-decoration-hyperlink);
+}
+
+
+// SIDE-NAV
+
+.sidebar.margin-sidebar {
+	margin-block-start: var(--toepassing-space-margin-sm);
+}
+.sidebar-navigation {
+	padding: 0;
+}
+
+.quarto-listing-category {
+	color: var(--toepassing-color-text-subtle-2);
+}
+
+
+// OVERZICHT-PAGINA
+
+body:has(.quarto-listing) #quarto-margin-sidebar {
+	grid-column: page-start / body-start;
+}
+
+div.quarto-post {
+	border: 0;
+	gap: 0;
+	margin-block-end: var(--toepassing-space-margin-md);
+	.body {
+		flex-basis: 80%
+	}
+}
+
+.quarto-post.image-right {
+  flex-direction: row;
+}
+
+div.quarto-post .body h3.listing-title {
+	margin-block-end: var(--toepassing-space-margin-xs);
+}
+
+.listing-categories {
+	gap: var(--toepassing-space-margin-2xs);
+}
+
+.quarto-listing-category .category {
+	padding-block-end: var(--toepassing-space-padding-2xs);
+}
+
+// DETAILPAGINA
+
+main.content svg {
+	max-inline-size: 100%;
+	block-size: auto;
+}
+
+
+// METADATA
+
+div.metadata a {
+	color: var(--toepassing-color-text-subtle-2);
+	display: flex;
+	font-size: var(--toepassing-text-size-body-sm);
+	gap: var(--toepassing-space-margin-2xs);
+}
+.quarto-categories {
+	margin-block-end: var(--toepassing-space-margin-2xs);
+}
+#title-block-header>div.quarto-title-meta-author>div:nth-child(1) {
+	display: none;
+}
+
+#title-block-header>div.quarto-title-meta-author>div:nth-child(4) {
+	margin-block-end: var(--toepassing-space-margin-2xs);
+}
+#title-block-header.quarto-title-block.default [class^="quarto-title-meta-"],
+.quarto-title .quarto-categories .quarto-category,
+div.quarto-post .listing-categories .listing-category {
+	border: 0;
+	font-size: var(--toepassing-text-size-body-md);
+	opacity: 1;
+	padding: 0;
+	text-transform: unset;
+}
+#title-block-header.quarto-title-block.default [class^=quarto-title-meta-] {
+	font-weight: var(--toepassing-text-font-weight-bold);
+}
+.quarto-title-block.default .quarto-category a,
+#listing-listing .listing-category {
+	background: var(--toepassing-color-background-subtle);
+	border: var(--toepassing-border-subtle);
+	border-radius: var(--toepassing-border-radius-lg);
+	color: var(--toepassing-color-text-subtle-2);
+	font-size: var(--toepassing-text-size-body-xs);
+	font-weight: var(--toepassing-text-font-weight-semi-bold);
+	padding-inline: var(--toepassing-space-padding-xs);
+	&:hover {
+		background: var(--toepassing-color-interactive-alternate-hover-background);
+	}
+}
+
+
+// TOC
+
+#toc-title {
+	margin-block-end: var(--toepassing-space-margin-2xs);
+}
+
+#TOC>ul>li {
+	margin-block-end: var(--toepassing-space-margin-2xs);
+}
+
+
+// CALL-OUTS
+
+.callout {
+	border-radius: var(--toepassing-border-radius-md);
+	padding: var(--toepassing-space-padding-xs);
+	ul, ol {
+		padding-inline-start: var(--toepassing-space-padding-md);
+	}
+}
+.callout.callout-style-default {
+	background-color: var(--toepassing-color-background-default);
+	border: var(--toepassing-border-default);
+	border-color: var(--toepassing-color-feedback-neutral-border);
+	border-inline-start-width: var(--toepassing-size-4xs);
+}
+div[class^=callout].callout-style-default>.callout-header {
+	background: none;
+	font-weight: var(--toepassing-text-font-weight-bold);
+}
+.callout-body-container.callout-body,
+.callout-body {
+	padding-inline-start: var(--toepassing-space-padding-lg);
+	p, li {
+		font: var(--toepassing-text-paragraph-default);
+	}
+}
+.callout.callout-style-default:not(.no-icon) {
+	div.callout-icon-container {
+		inline-size: var(--toepassing-size-icon-md);
+		padding: 0 !important;
+		.callout-icon::before {
+			background: none !important;
+			font-size: var(--toepassing-text-size-body-lg);
+			font-style: normal;
+		}
+	}
+	div.callout-title-container {
+		margin-block-start: var(--toepassing-size-5xs);
+	}
+}
+div.callout-note.callout {
+	background: var(--toepassing-color-feedback-info-subtle);
+	border-color: var(--toepassing-color-feedback-info-border);
+	.callout-icon::before {
+		content: "ℹ️";
+	}
+}
+div.callout-tip.callout {
+	background: var(--toepassing-color-feedback-success-subtle);
+	border-color: var(--toepassing-color-feedback-success-border);
+	.callout-icon::before {
+		content: "💡";
+	}
+}
+div.callout-important.callout {
+	background: var(--toepassing-color-feedback-warning-subtle);
+	border-color: var(--toepassing-color-feedback-warning-border);
+	.callout-icon::before {
+		content: "❗️";
+	}
+}
+div.callout-caution.callout {
+	background: var(--toepassing-color-feedback-warning-subtle);
+	border-color: var(--toepassing-color-feedback-warning-border);
+	padding-top: 0;
+	.callout-icon::before {
+		content: "⚠️";
+	}
+}
+div.callout-warning.callout {
+	background: var(--toepassing-color-feedback-error-subtle);
+	border-color: var(--toepassing-color-feedback-error-border);
+	.callout-icon::before {
+		content: "⛔️";
+	}
+}
+
+// Custom call-out variant voor het tonen van citaten
+div[class^=callout][title^="Citaat"] {
+	p {
+		font-size: calc(var(--toepassing-text-size-body-md)*1.025); // Cursieve tekst net iets groter zetten om te matchen met normale lopende tekst
+		font-style: italic;
+		&::before, &::after {
+			content: "“ ";
+			font-style: normal;
+		}
+		&::after {
+			content: " ”";
+		}
+	}
+	.callout-icon::before {
+		content: "💬";
+	}
+}
+// Custom call-out variant voor het tonen van use cases
+div[class^=callout][title^="Use case"] {
+	.callout-icon::before {
+		content: "👤";
+	}
+}
+div[class^=callout][title^="Citaat"],
+div[class^=callout][title^="Use case"] {
+	background: var(--toepassing-color-feedback-neutral-subtle);
+	border-color: var(--toepassing-color-feedback-neutral-border);
+}
+
+
+// MEDIA
+
+.quarto-figure {
+	border: var(--toepassing-border-subtle);
+	border-radius: var(--toepassing-border-radius-md);
+	padding: var(--toepassing-space-padding-2xs);
+	a {
+		cursor: zoom-in;
+	}
+	figcaption {
+		font-size: var(--toepassing-text-font-size-md);
+		font-weight: var(--toepassing-text-font-weight-semi-bold);
+		padding-inline: var(--toepassing-space-padding-xs);
+	}
+}
+.goverlay {
+	background: var(--toepassing-color-background-subtle) !important;
+}
+.glightbox-clean .gslide-media {
+	box-shadow: none !important;
+}
+.gslider {
+	margin: var(--toepassing-space-margin-2xs);
+}
+.gslide-image, .gslide-description {
+	border: var(--toepassing-border-subtle);
+}
+.gslide-image {
+	border-block-end: none;
+	border-radius: var(--toepassing-border-radius-md) var(--toepassing-border-radius-md) 0 0;
+}
+.gslide-description {
+	border-block-start: none;
+	border-radius: 0 0 var(--toepassing-border-radius-md) var(--toepassing-border-radius-md);
+	margin-block-end: var(--toepassing-space-margin-2xs);
+}
+.glightbox-clean .gdesc-inner {
+	padding: var(--toepassing-space-padding-xs) var(--toepassing-space-padding-sm) !important;
+}

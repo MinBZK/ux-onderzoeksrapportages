@@ -1,0 +1,55 @@
+---
+title: "Template Gebruikersonderzoeken.nl"
+description: "Korte beschrijving van het onderzoek"
+author:
+  - name: "Naam onderzoeker 1"
+    email: "onderzoeker-1@example.com"
+    affiliation: "Rol, Organisatie 1"
+  - name: "Naam onderzoeker 2"
+    email: "onderzoeker-2@example.com"
+    affiliation: "Rol, Organisatie 2"
+date: "2026-05-11"
+date-modified: last-modified
+categories: [keyword 1, keyword 2, keyword 3]
+---
+
+---
+
+ℹ️ Gebaseerd op het [template van Gebruikersonderzoeken.nl](https://hackmd.io/@nlds/HkyqEgy80).
+
+---
+
+## Doel van het onderzoek
+
+Wat wilden we met het onderzoek bereiken? Wat was de onderzoeksvraag? Losstaand van of dat ook gelukt is of niet.
+
+## Advies
+
+Welk advies geven we op basis van dit onderzoek? Welke actie moet er ondernomen worden? Wat gebeurt er al dat goed gaat waarmee doorgezet moet worden, waarmee moet gestopt worden?
+
+## Resultaten en inzichten
+
+Wat zijn de resultaten van het onderzoek en welke inzichten hebben we opgehaald?
+
+## Wat is er mee gedaan?
+
+Indien op moment van schrijven al van toepassing: een korte beschrijven van wat er met de onderzoeksresultaten wordt gedaan.
+
+## Opzet onderzoek
+
+Hoe is het onderzoek gedaan? Wat voor methode is gebruikt? Hoeveel mensen zijn bevraagd op welke manier? Van wanneer tot wanneer heeft het onderzoek plaatsgevonden.
+
+## Contactinformatie
+
+Vanuit welke organisatie is het onderzoek gedaan? Bij wie kan je terecht voor vragen? Lijstje van de onderzoekers: naam + email.
+
+- [Naam onderzoeker 1](mailto:onderzoeker-1@example.com), rol, organisatie 1
+- [Naam onderzoeker 2](mailto:onderzoeker-2@example.com), rol, organisatie 2
+
+## Documentatie
+
+Relevante onderzoeksdocumenten, websites, bijlagen, etcetera. Alles waarnaar verwezen wordt in de tekst of wat verdieping kan bieden.
+
+## Bijlagen
+
+Bijlagen waar naar verwezen wordt die relevant zijn om direct in het onderzoek te zetten.

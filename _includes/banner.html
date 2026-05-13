@@ -1,0 +1,17 @@
+<div class="rijks-banner-container">
+  <a href="./" aria-label="Naar homepage">
+    <img
+      src="https://proef.moza.rijksapp.dev/assets/images/beeldmerk-rijksoverheid.svg"
+      alt="Rijksoverheid"
+      width="50"
+      height="100">
+  </a>
+</div>
+<script>
+  (function () {
+    var banner = document.currentScript.previousElementSibling;
+    if (banner && banner.parentElement !== document.body) {
+      document.body.insertBefore(banner, document.body.firstChild);
+    }
+  })();
+</script>

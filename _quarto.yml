@@ -1,0 +1,56 @@
+project:
+  type: website
+  resources:
+    - assets/icons/**
+
+lang: nl
+
+language:
+  listing-page-field-categories: "Onderwerpen"
+  title-block-author-single: "Onderzoeker"
+  title-block-author-plural: "Onderzoekers"
+  title-block-affiliation-single: "Onderzoeker"
+  title-block-affiliation-plural: "Onderzoekers"
+  title-block-published: "Gepubliceerd op"
+  title-block-modified: "Laatst bijgewerkt op"
+  title-block-keywords: "Onderwerpen"
+
+website:
+  title: "UX onderzoeksrapportages"
+  description: "Onderzoeksrapporten van gebruikersonderzoek bij de Rijksoverheid"
+  navbar:
+    background: primary
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Rapporten
+      - href: about.qmd
+        text: Over deze site
+
+format:
+  html:
+    theme: custom.scss
+    toc: true
+    toc-location: left
+    mermaid:
+      theme: default
+      themeVariables:
+        primaryColor: "#01689b"
+        primaryTextColor: "#fff"
+        primaryBorderColor: "#01689b"
+        lineColor: "#444"
+        fontFamily: "RijksSansVF, sans-serif"
+    lightbox: true
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://proef.moza.rijksapp.dev/style/_rijkshuisstijl.css">
+          <link rel="stylesheet" href="https://proef.moza.rijksapp.dev/style/_toepassing.css">
+          <link rel="stylesheet" href="https://proef.moza.rijksapp.dev/style/_reset.css">
+          <link rel="shortcut icon" href="https://proef.moza.rijksapp.dev/assets/favicon/favicon.ico" type="image/x-icon">
+          <link rel="icon" sizes="192x192" href="https://proef.moza.rijksapp.dev/assets/favicon/touch-icon.png">
+          <link rel="apple-touch-icon" href="https://proef.moza.rijksapp.dev/assets/favicon/apple-touch-icon.png">
+    include-before-body:
+      - _includes/banner.html
+
+navbar:
+  background: primary

@@ -1,0 +1,152 @@
+---
+title: "Voorbeeldrapport: usability test van een prototype"
+description: "Korte samenvatting van het onderzoek. Deze verschijnt onder de titel op de overzichtspagina."
+author:
+  - name: "Naam Onderzoeker 1"
+    email: "naam.onderzoeker@example.com"
+    affiliation: "Rol, Organisatie"
+  - name: "Naam Onderzoeker 2"
+    email: "naam.onderzoeker@example.com"
+    affiliation: "Rol, Organisatie"
+  - name: "Naam Onderzoeker 3"
+    email: "naam.onderzoeker@example.com"
+    affiliation: "Rol, Organisatie"
+date: "2026-05-07"
+date-modified: last-modified
+categories: [usability, prototype]
+---
+
+<!-- Verwijder regel 19 t/m 27 met onderstaande notificatie voor publicatie -->
+
+---
+
+ℹ️ **Dit is een voorbeeldrapport, [gebruik dit template](template-gebruikersonderzoeken-nl.qmd) voor het opstellen van een rapport bestemd voor [Gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl/).**
+
+---
+
+<!-- Verwijder regel 19 t/m 27 met bovenstaande notificatie voor publicatie -->
+
+## Samenvatting
+
+Een korte managementsamenvatting van het onderzoek: wat was de aanleiding, wat is er gedaan, en wat zijn de belangrijkste bevindingen en aanbevelingen.
+
+::: {.callout-tip title="Belangrijkste bevinding"}
+Vat hier in één tot drie zinnen de belangrijkste conclusie samen — dit is wat een drukke lezer als enige meeneemt.
+:::
+
+## Onderzoeksvraag
+
+Welke vraag wilde dit onderzoek beantwoorden?
+
+## Methode
+
+- **Type onderzoek:** bijvoorbeeld moderated usability test
+- **Aantal deelnemers:** n=
+- **Periode:** dd-mm-jjjj t/m dd-mm-jjjj
+- **Materiaal:** prototype, taken, vragenlijst
+
+### User flow
+
+Onderstaand een vereenvoudigde weergave van de geteste flow:
+
+```{mermaid}
+flowchart LR
+  A[Start] --> B{Inloggen?}
+  B -->|Ja| C[Dashboard]
+  B -->|Nee| D[Inlogscherm]
+  D --> C
+  C --> E[Taak afronden]
+```
+
+## Bevindingen
+
+### Bevinding 1: Deelnemers verwachten een knop in plaats van een link
+
+Beschrijving van wat er is geobserveerd. Verwijs naar de schermafdrukken in @fig-vergelijking.
+
+::: {.callout-note title="Citaat deelnemer 4"}
+"Ik zag eerst niet eens dat ik daar iets kon doen. Ik dacht dat het gewoon uitleg was."
+:::
+
+::: {#fig-vergelijking layout-ncol=2}
+![Huidige situatie](https://placehold.co/600x400?text=Voor){#fig-voor}
+
+![Voorstel](https://placehold.co/600x400?text=Na){#fig-na}
+
+Vergelijking tussen de huidige situatie en het voorstel.
+:::
+
+### Bevinding 2: Bevindingen per persona
+
+::: {.panel-tabset}
+
+## Persona A: eerste keer
+
+Bij deelnemers die voor het eerst inloggen viel op dat ...
+
+## Persona B: herhaaldelijk gebruik
+
+Frequente gebruikers verwachten ...
+
+## Persona C: toegankelijkheid
+
+Deelnemers met een schermlezer hadden moeite met ...
+
+:::
+
+### Bevinding 3: Sessieopname
+
+Een korte fragment uit een sessie ter illustratie:
+
+{{< video https://www.youtube.com/watch?v=E3Ooixq5MF4 aria-label="Video van de NNgroup over het informeren van strategie als UX-onderzoeker">}}
+
+## Resultaten per deelnemer
+
+| Deelnemer | Leeftijd | Apparaat | Taak voltooid | Tijd (mm:ss) | SUS-score |
+|:---------:|---------:|:---------|:-------------:|-------------:|----------:|
+| P1        |       34 | Laptop   |      Ja       |        01:45 |        85 |
+| P2        |       28 | Mobiel   |      Ja       |        02:38 |        72 |
+| P3        |       52 | Laptop   |      Nee      |        04:10 |        45 |
+| P4        |       41 | Mobiel   |      Ja       |        02:05 |        78 |
+| P5        |       63 | Tablet   |      Ja       |        03:22 |        65 |
+| P6        |       29 | Laptop   |      Ja       |        01:58 |        88 |
+
+: Sessiedata van de zes deelnemers — taak "Inloggen voltooien" {#tbl-deelnemers}
+
+
+## Aanbevelingen
+
+::: {.callout-note title="Opmerking"}
+Maak de primaire actie op het inlogscherm visueel onderscheidend van de overige tekst, zodat deelnemers direct herkennen waar zij moeten klikken.
+:::
+
+::: {.callout-tip title="Tip"}
+- Pas de primaire actie aan zodat 'ie als knop herkenbaar is.
+- Voeg een uitleg-tooltip toe bij het inlogveld.
+:::
+
+::: {.callout-important title="Belangrijk"}
+Voor live-gang moet eerst worden bepaald welke variant (A of B) de standaard wordt. Beide voldoen aan de eisen, maar de keuze raakt het ontwerp van het hele aanmeldproces.
+:::
+
+::: {.callout-caution title="Let op"}
+Houd er rekening mee dat de huidige meting plaatsvond met een prototype; gedrag kan in een live-omgeving afwijken doordat deelnemers daar onder tijdsdruk staan.
+:::
+
+::: {.callout-warning title="Waarschuwing"}
+Het effect op gebruikers met een schermlezer moet apart worden getest voordat de wijziging live gaat.
+:::
+
+::: {.callout-note title="Use case 1: Eerste inlog op mobiel"}
+Een nieuwe gebruiker opent de app voor het eerst op een mobiel apparaat. Zij ziet het inlogscherm, maar herkent de primaire actie niet als knop en tikt eerst op de uitleg-tekst. Pas na het scrollen vindt zij de juiste plek om in te loggen.
+:::
+
+::: {.callout-note title="Citaat deelnemer 3"}
+Ik dacht eerst dat het alleen informatie was. Ik bleef zoeken naar een knop. Toen ik 'm vond, dacht ik: oh, dít was het al die tijd.
+:::
+
+## Bijlagen
+
+- [Onderzoeksprotocol](onderzoeksprotocol.pdf)
+- [Lijst van taken](lijst-van-taken.xls)
+- [Volledige transcripten](volledige-transcripten.docx)
