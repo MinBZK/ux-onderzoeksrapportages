@@ -1,0 +1,11 @@
+.git
+.github
+.claude
+.quarto
+.Rproj.user
+.Rhistory
+.DS_Store
+_site
+node_modules
+*.log
+ux-onderzoeksrapportages.Rproj
