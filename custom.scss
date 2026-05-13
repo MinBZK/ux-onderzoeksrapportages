@@ -225,6 +225,22 @@ body.nav-fixed {
 	text-decoration: var(--toepassing-text-decoration-hyperlink);
 }
 
+.aa-DetachedSearchButtonIcon {
+	background-color: currentColor;
+	mask-image: url("/assets/icons/icon-zoek.svg");
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	block-size: var(--toepassing-size-icon-md);
+	inline-size: var(--toepassing-size-icon-md);
+	>* {
+		display: none;
+	}
+}
+.aa-SubmitButton {
+	
+}
+
 
 // SIDE-NAV
 
