@@ -296,6 +296,12 @@ a[href^="https://www.samenwerkruimten.nl/"]::after {
 	margin-inline-start: var(--toepassing-space-layout-3xs);
 }
 
+.sidebar .quarto-alternate-formats {
+	h2, ul {
+		font-size: unset;
+	}
+}
+
 // METADATA
 
 div.metadata a {

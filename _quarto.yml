@@ -35,6 +35,15 @@ format:
     theme: custom.scss
     toc: true
     toc-location: left
+    format-links: false
+    include-after-body:
+      - text: |
+          <script>
+            // injecteer PDF-link in sidebar
+            const link = document.querySelector('.sidebar nav[role="doc-toc"]');
+            if (link) link.insertAdjacentHTML('afterend', 
+              `<div class="pdf-link"><a href="${location.pathname.replace('.html','.pdf')}">Download als PDF</a></div>`);
+          </script>
     mermaid:
       theme: default
       themeVariables:
@@ -82,6 +91,14 @@ format:
         collapse: false
     filters:
       - custom-callout
+  typst:
+    toc: true
+    toc-depth: 2
+    papersize: a4
+    margin:
+      x: 2.5cm
+      y: 2.5cm
+    format-links: false
 
 navbar:
   background: primary

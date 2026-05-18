@@ -154,3 +154,4 @@ Ik dacht eerst dat het alleen informatie was. Ik bleef zoeken naar een knop. Toe
 - [Onderzoeksprotocol](onderzoeksprotocol.pdf)
 - [Lijst van taken](lijst-van-taken.xls)
 - [Volledige transcripten](volledige-transcripten.docx)
+- [Presentatie voor stakeholders](stakeholder-presentatie.ppt)
