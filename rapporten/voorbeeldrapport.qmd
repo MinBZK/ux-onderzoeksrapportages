@@ -120,6 +120,10 @@ Een korte fragment uit een sessie ter illustratie:
 Maak de primaire actie op het inlogscherm visueel onderscheidend van de overige tekst, zodat deelnemers direct herkennen waar zij moeten klikken.
 :::
 
+::: {.callout-note collapse title="Opmerking"}
+Maak de primaire actie op het inlogscherm visueel onderscheidend van de overige tekst, zodat deelnemers direct herkennen waar zij moeten klikken.
+:::
+
 ::: {.callout-tip title="Tip"}
 - Pas de primaire actie aan zodat 'ie als knop herkenbaar is.
 - Voeg een uitleg-tooltip toe bij het inlogveld.

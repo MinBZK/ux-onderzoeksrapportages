@@ -24,6 +24,8 @@ website:
     left:
       - href: index.qmd
         text: Rapporten
+      - href: handleiding.qmd
+        text: Handleiding
       - href: about.qmd
         text: Over deze site
 
@@ -51,6 +53,29 @@ format:
           <link rel="apple-touch-icon" href="https://proef.moza.rijksapp.dev/assets/favicon/apple-touch-icon.png">
     include-before-body:
       - _includes/banner.html
+    custom-callout:
+      callout-quote:
+        title: "Citaat"
+        color: ""
+        icon-symbol: "💬"
+        collapse: false
+      callout-question:
+        title: "Vraag"
+        color: ""
+        icon-symbol: "🙋"
+        collapse: false
+      callout-usecase:
+        title: "Use case"
+        color: ""
+        icon-symbol: "👤"
+        collapse: false
+      callout-userjourney:
+        title: "Klantreis"
+        color: ""
+        icon-symbol: "✈️"
+        collapse: false
+    filters:
+      - custom-callout
 
 navbar:
   background: primary

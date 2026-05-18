@@ -1,0 +1,384 @@
+---
+title: "Handleiding publiceren"
+description: "Hoe schrijf en publiceer ik een nieuw rapport op deze site?"
+toc: true
+---
+
+Dit platform maakt gebruik van [Quarto](https://quarto.org/), een open-source publicatie systeem. Het biedt de mogelijkheid om diverse ondersteunende dingen toe te voegen zoals afbeeldingen, video, diagrammen, ‘[*callouts*](#callouts)’ en tabellen.
+
+Deze handleiding helpt je op weg om een gebruikersonderzoek te publiceren. Alles is geschreven in [Markdown](https://www.markdownguide.org/), een eenvoudige standaard tekstopmaak. Je hoeft niets te programmeren.
+
+## Snelstart
+
+1. Kopieer [`rapporten/template-gebruikersonderzoeken-nl.qmd`](rapporten/template-gebruikersonderzoeken-nl.qmd) naar een nieuw bestand in dezelfde map. Geef het een korte, herkenbare naam met streepjes, bijv. `inloggen-belastingdienst-2026.qmd`.
+2. Open het bestand in een teksteditor
+3. Pas de *[frontmatter](#frontmatter)* bovenaan aan (titel, auteur, datum, onderwerpen).
+4. Schrijf je rapport in markdown.
+5. Commit en push naar `main` — de site bouwt automatisch en publiceert.
+
+::: {.callout-tip title="Bekijk het voorbeeldrapport"}
+[rapporten/voorbeeldrapport.qmd](rapporten/voorbeeldrapport.qmd) toont alle bouwstenen zoals callouts, tabs, tabellen, video, mermaid-diagrammen.
+:::
+
+## Frontmatter
+
+Bovenaan elk rapport staat een blok (tussen `---`) met **metadata**. Hier staat de titel van het onderzoek, een korte beschrijving, de auteur(s) en optionele rol en/of organisatie, publicatie- en modificatiedatum, en op welke onderwerpen (categorie-tags) het rapport vindbaar is.
+
+```yaml
+---
+title: "Korte, beschrijvende titel van het rapport"
+description: "Beknopte samenvatting (één zin). Deze verschijnt op de overzichtspagina."
+author:
+  - name: "Voornaam Achternaam"
+    email: "voornaam.achternaam@example.com"
+    affiliation: "Rol, Organisatie"
+date: "2026-05-15"
+date-modified: last-modified
+categories: [categorie-tag 1, categorie-tag 2, categorie-tag 3, etc.]
+---
+```
+
+**Belangrijk**:
+
+- Gebruik **2 spaties** voor inspringen, geen tabs.
+- Datum-formaat: `jjjj-mm-dd`. `last-modified` voor `date-modified` updatet automatisch bij elke wijziging.
+- `categories` (categorie-tags) worden gebruikt voor filteren op de overzichtspagina. Houd ze kort en consistent en vermijd wildgroei aan tags; voorkom synoniemen of andere schrijfwijzen voor al bestaande tags,
+- Zijn er meerdere auteurs? Voeg dan voor iedere auteur `- name:` regels toe.
+
+## Markdown-basis
+
+### Koppen
+
+```markdown
+## Sectiekop (h2)
+### Subsectie (h3)
+#### Sub-subsectie (h4)
+```
+
+Begin niet met `#` (h1), deze is gereserveerd voor de rapport-titel uit de frontmatter.
+
+### Tekst-opmaak
+
+```markdown
+**vet**, *cursief*, `inline code`, [link tekst](https://example.com)
+```
+
+### Lijsten
+
+```markdown
+- Bullet één
+- Bullet twee
+  - Sub-bullet
+
+1. Genummerd één
+2. Genummerd twee
+```
+
+### Afbeeldingen
+
+```markdown
+![Beschrijvende tekst voor screenreaders](../assets/images/bestand.png)
+```
+
+Zet afbeeldingen in `assets/images/` en geef deze duidelijke namen (bijv. `inlogscherm-belastingdienst.png`) i.p.v. `Screenshot 2026-05-18.png`.
+
+Afbeeldingen worden automatisch (via een ‘lightbox’) vergroot als gebruikers hier op klikken/tappen.
+
+### Tabellen
+
+```markdown
+| Deelnemer | Leeftijd | Apparaat | Taak voltooid |
+|:---------:|---------:|:---------|:-------------:|
+| P1        |       34 | Laptop   |      Ja       |
+| P2        |       28 | Mobiel   |      Ja       |
+| P3        |       52 | Laptop   |      Nee      |
+
+: Sessiedata van de deelnemers {#tabel-1-sessiedata}
+```
+
+`:---` = links uitgelijnde tabeldata, `---:` = rechts uitgelijnde tabeldata, `:---:` = gecentreerde tabeldata. Voeg optioneel `{#tabel-naam}` toe zodat via deze ‘ID’ vanuit tekst kan worden verwezen (`[Tabel 1: Sessiedata van de deelnemers](#tabel-1-sessiedata)`).
+
+## Callouts
+
+Callouts zijn gekleurde tekstblokken die belangrijke informatie laten opvallen.
+
+::: {.callout-note title="Opmerking"}
+Algemene aanvulling, opmerking of notitie.
+:::
+
+```markdown
+::: {.callout-note title="Opmerking"}
+Tekst van de opmerking.
+:::
+```
+
+::: {.callout-tip title="Tip"}
+Praktische tip of suggestie. Bijvoorbeeld te gebruiken voor een belangrijkste bevinding of aanbeveling.
+:::
+
+```markdown
+::: {.callout-tip title="Tip"}
+Tekst van de tip of suggestie.
+:::
+```
+
+::: {.callout-important title="Belangrijk"}
+Belangrijk besluitpunt of randvoorwaarde.
+:::
+
+```markdown
+::: {.callout-important title="Belangrijk"}
+Tekst van het belangrijke punt.
+:::
+```
+
+::: {.callout-caution title="Opgelet"}
+Iets om voorzichtig mee te zijn, bijv. een beperking van het onderzoek of een aanname.
+:::
+
+```markdown
+::: {.callout-caution title="Opgelet"}
+Tekst van de waarschuwing.
+:::
+```
+
+::: {.callout-warning title="Waarschuwing"}
+Sterkere waarschuwing, risico op fouten of foute interpretatie.
+:::
+
+```markdown
+::: {.callout-warning title="Waarschuwing"}
+Tekst van de waarschuwing.
+:::
+```
+
+Vier extra callouts bovenop de standaard callouts zijn toegevoegd via de [Custom Callout Extension](https://github.com/coatless-quarto/custom-callout) Quarto extensie.
+
+::: {.callout-quote title="Citaat deelnemer 4"}
+Ik zag eerst niet eens dat ik daar iets kon doen. Ik dacht dat het gewoon uitleg was.
+:::
+
+```markdown
+::: {.callout-quote title="Citaat deelnemer 4"}
+Letterlijke uitspraak van de deelnemer.
+:::
+```
+
+Gebruik voor **letterlijke uitspraken** uit interviews of testsessies. Geef altijd de context aan in de `title` (persona, rol, etc.). Aanhalingstekens worden automatisch om het citaat geplaatst.
+
+::: {.callout-question title="Vraag"}
+Welke specifieke onderzoeksvraag wilde dit deelonderzoek beantwoorden?
+:::
+
+```markdown
+::: {.callout-question title="Vraag"}
+Onderzoeksvraag of openstaande vraag voor vervolgonderzoek.
+:::
+```
+
+Gebruik voor **onderzoeksvragen**, deelvragen of openstaande vraagstukken die nog uitgezocht moeten worden.
+
+::: {.callout-usecase title="Use case 1 — Eerste inlog op mobiel"}
+Een nieuwe gebruiker opent de app voor het eerst op een mobiel apparaat en ziet het inlogscherm. Zij herkent de primaire actie niet als knop en tikt eerst op de uitleg-tekst.
+:::
+
+```markdown
+::: {.callout-usecase title="Use case 1 — Eerste inlog op mobiel"}
+Scenario-beschrijving: wie, wat, in welke context.
+:::
+```
+
+Gebruik voor **scenario’s** of **use cases** — concrete gebruikssituaties die je in het onderzoek hebt onderzocht.
+
+::: {.callout-userjourney title="Klantreis: aanvraag indienen"}
+1. Gebruiker zoekt informatie via Google → komt op overheid.nl
+2. Klikt door naar specifieke dienst
+3. Logt in via DigiD
+4. Vult formulier in en dient aanvraag in
+5. Ontvangt bevestigingsmail
+:::
+
+```markdown
+::: {.callout-userjourney title="Klantreis: aanvraag indienen"}
+1. Stap één
+2. Stap twee
+3. etc.
+:::
+```
+
+Gebruik voor **gebruikersreizen** — meerdere stappen die een gebruiker doorloopt.
+
+### Overzicht alle callouts
+
+| Callout | Wanneer gebruiken |
+|---|---|
+| `callout-note` | Opmerking, aanvullende context |
+| `callout-tip` | Tip, aanbeveling, belangrijkste bevinding |
+| `callout-important` | Besluitpunt, randvoorwaarde |
+| `callout-caution` | Beperking, aanname |
+| `callout-warning` | Risico, foute interpretatie |
+| `callout-quote` | Letterlijk citaat uit interview/test |
+| `callout-question` | Onderzoeksvraag, openstaand punt |
+| `callout-usecase` | Scenario of use case |
+| `callout-userjourney` | End-to-end klantreis met stappen |
+
+### Inklapbaar maken
+
+Een callout kan standaard ingeklapt worden door `collapse="true"` toe te voegen:
+
+::: {.callout-note collapse="true" title="Klik om uit te klappen"}
+Inhoud die ingeklapt begint.
+:::
+
+```markdown
+::: {.callout-note collapse="true" title="Klik om uit te klappen"}
+Inhoud die ingeklapt begint.
+:::
+```
+
+## Diagrammen met Mermaid
+
+Voor flows, gebruikersreizen en stappenplannen kan Mermaid gebruikt worden. Schrijf de diagram-code tussen ` ```{mermaid} ` en ` ``` `:
+
+````markdown
+```{mermaid}
+flowchart LR
+  A[Start] --> B{Inloggen?}
+  B -->|Ja| C[Dashboard]
+  B -->|Nee| D[Inlogscherm]
+  D --> C
+  C --> E[Taak afronden]
+```
+````
+
+Dit wordt gerenderd als:
+
+```{mermaid}
+flowchart LR
+  A[Start] --> B{Inloggen?}
+  B -->|Ja| C[Dashboard]
+  B -->|Nee| D[Inlogscherm]
+  D --> C
+  C --> E[Taak afronden]
+```
+
+**Veel gebruikte Mermaid-types**:
+
+- `flowchart LR` — links-naar-rechts flow
+- `flowchart TB` — boven-naar-onder flow
+- `sequenceDiagram` — interactie tussen actoren
+- `journey` — user journey map
+
+Volledige documentatie: [Mermaid syntax](https://mermaid.js.org/intro/).
+
+## Tabs (panel-tabset)
+
+Voor het scheiden van inhoud per persona of variant:
+
+```markdown
+::: {.panel-tabset}
+
+## Persona A
+
+Inhoud voor persona A.
+
+## Persona B
+
+Inhoud voor persona B.
+
+## Persona C
+
+Inhoud voor persona C.
+
+:::
+```
+
+Resultaat:
+
+::: {.panel-tabset}
+
+## Persona A
+
+Inhoud voor persona A.
+
+## Persona B
+
+Inhoud voor persona B.
+
+## Persona C
+
+Inhoud voor persona C.
+
+:::
+
+## Video toevoegen
+
+```markdown
+{{< video https://www.youtube.com/watch?v=VIDEOID >}}
+```
+
+Dit werkt voor bijv. YouTube, Vimeo, of lokale bestanden. Lokale video-bestanden worden in de map `assets` → `video` geplaatst.
+
+## Documentbijlagen
+
+Documenten in diverse bestandsformaten kunnen bijgevoegd worden zoals PDF, Word of Excel bestanden.
+
+```markdown
+## Bijlagen
+
+- [Onderzoeksprotocol](onderzoeksprotocol.pdf)
+- [Lijst van taken](lijst-van-taken.xlsx)
+- [Volledige transcripten](volledige-transcripten.docx)
+- [Stakeholder presentatie](stakeholder-presentatie.ppt)
+```
+
+Links naar `.pdf`, `.xls(x)`, `.doc(x)` en `.ppt` krijgen automatisch een bestandstype-icoon ervoor.
+
+- [Onderzoeksprotocol](onderzoeksprotocol.pdf)
+- [Lijst van taken](lijst-van-taken.xlsx)
+- [Volledige transcripten](volledige-transcripten.docx)
+- [Stakeholder presentatie](stakeholder-presentatie.ppt)
+
+## Publiceren
+
+1. Sla je `.qmd`-bestand op.
+2. Open een terminal in de project-map en commit:
+   ```bash
+   git add rapporten/jouw-rapport.qmd
+   git commit -m "Voeg rapport toe: jouw-rapport"
+   git push
+   ```
+3. Een GitHub Actions workflow bouwt en publiceerd automatisch de site met de toegevoegde onderzoeken. Het kan even duren (meestal ~3 minuten) voordat je rapport live staat.
+4. Om een **preview** te kijken vóór live-gang: maak een *[Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)*, deze krijgt een eigen tijdelijke URL.
+
+::: {.callout-tip title="Lokaal previewen tijdens schrijven"}
+In een terminal:
+
+```bash
+quarto preview
+```
+
+Opent een browser-tab die elke save automatisch herlaadt — handig om in real-time te zien hoe je rapport eruit komt te zien.
+:::
+
+## Veelvoorkomende fouten
+
+::: {.callout-warning title="YAML-frontmatter parse-fout"}
+In [frontmatter](#frontmatter), het bovenste blok tussen `---` kunnen tabs en spaties **niet gemixed** worden. Gebruik altijd 2 spaties voor inspringen.
+
+Strings met dubbele punten worden in aanhalingstekens gezet: `title: "Onderzoek: inloggen"`.
+:::
+
+::: {.callout-warning title="Afbeelding niet zichtbaar"}
+Check het pad naar de map. Vanuit een rapport in `rapporten/` is dit pad `../assets/images/afbeelding.png`. Gebruik voor bestandsnamen alleen kleine letters, streepjes en cijfers, geen spaties.
+:::
+
+::: {.callout-warning title="Callout rendert als gewone tekst"}
+Er dient een lege regel boven `:::` en onder de slotregel `:::` te staan. Spaties of tabs voor `:::` zijn niet toegestaan.
+:::
+
+## Hulp en feedback
+
+- Bekijk het [voorbeeldrapport](rapporten/voorbeeldrapport.qmd), hier zie je alle bouwstenen in actie.
+- Bekijk het [Gebruikersonderzoeken template](rapporten/template-gebruikersonderzoeken-nl.qmd), dit template is gebaseerde op het [Gebruikersonderzoeken template van het NL Design System](https://hackmd.io/@nlds/HkyqEgy80).
+- Open een issue in de [GitHub-repository](https://github.com/MinBZK/ux-onderzoeksrapportages/issues).

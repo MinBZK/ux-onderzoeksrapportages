@@ -150,14 +150,16 @@ li:has(> a[href$=".pdf"]),
 li:has(> a[href$=".doc"]),
 li:has(> a[href$=".docx"]),
 li:has(> a[href$=".xls"]),
-li:has(> a[href$=".xlsx"]) {
+li:has(> a[href$=".xlsx"]),
+li:has(> a[href$=".ppt"]) {
 	list-style: none;
 }
 a[href$=".pdf"],
+a[href$=".doc"],
+a[href$=".docx"],
 a[href$=".xls"],
 a[href$=".xlsx"],
-a[href$=".doc"],
-a[href$=".docx"] {
+a[href$=".ppt"] {
 	&::before {
 		background-position: center;
 		background-repeat: no-repeat;
@@ -180,6 +182,9 @@ a[href$=".docx"]::before {
 a[href$=".xls"]::before,
 a[href$=".xlsx"]::before {
 	background-image: url("/assets/icons/icon-filetype-excel.svg");
+}
+a[href$=".ppt"]::before {
+	background-image: url("/assets/icons/icon-filetype-powerpoint.svg");
 }
 
 
@@ -238,7 +243,7 @@ body.nav-fixed {
 	}
 }
 .aa-SubmitButton {
-	
+
 }
 
 
@@ -391,21 +396,25 @@ div[class^=callout].callout-style-default>.callout-header {
 		margin-block-start: var(--toepassing-size-5xs);
 	}
 }
-div.callout-note.callout {
+div.callout-note.callout,
+div.callout-callout-quote.callout {
 	background: var(--toepassing-color-feedback-info-subtle);
 	border-color: var(--toepassing-color-feedback-info-border);
 	.callout-icon::before {
 		content: "ℹ️";
 	}
 }
-div.callout-tip.callout {
+div.callout-tip.callout,
+div.callout-callout-usecase.callout,
+div.callout-callout-userjourney.callout {
 	background: var(--toepassing-color-feedback-success-subtle);
 	border-color: var(--toepassing-color-feedback-success-border);
 	.callout-icon::before {
 		content: "💡";
 	}
 }
-div.callout-important.callout {
+div.callout-important.callout,
+div.callout-callout-question.callout {
 	background: var(--toepassing-color-feedback-warning-subtle);
 	border-color: var(--toepassing-color-feedback-warning-border);
 	.callout-icon::before {
@@ -429,7 +438,7 @@ div.callout-warning.callout {
 }
 
 // Custom call-out variant voor het tonen van citaten
-div[class^=callout][title^="Citaat"] {
+.callout-callout-quote {
 	p {
 		font-size: calc(var(--toepassing-text-size-body-md)*1.025); // Cursieve tekst net iets groter zetten om te matchen met normale lopende tekst
 		font-style: italic;
@@ -441,20 +450,6 @@ div[class^=callout][title^="Citaat"] {
 			content: " ”";
 		}
 	}
-	.callout-icon::before {
-		content: "💬";
-	}
-}
-// Custom call-out variant voor het tonen van use cases
-div[class^=callout][title^="Use case"] {
-	.callout-icon::before {
-		content: "👤";
-	}
-}
-div[class^=callout][title^="Citaat"],
-div[class^=callout][title^="Use case"] {
-	background: var(--toepassing-color-feedback-neutral-subtle);
-	border-color: var(--toepassing-color-feedback-neutral-border);
 }
 
 
@@ -496,4 +491,29 @@ div[class^=callout][title^="Use case"] {
 }
 .glightbox-clean .gdesc-inner {
 	padding: var(--toepassing-space-padding-xs) var(--toepassing-space-padding-sm) !important;
+}
+
+
+// SOURCE CODE
+
+div.sourceCode,
+div.sourceCode pre.sourceCode,
+p code.sourceCode,
+li code.sourceCode,
+td code.sourceCode {
+	background: var(--toepassing-color-background-subtle);
+	color: inherit;
+}
+div.sourceCode,
+div.sourceCode pre.sourceCode {
+	border: var(--toepassing-border-subtle);
+	border-radius: var(--toepassing-border-radius-md);
+}
+.callout {
+	div.sourceCode,
+	div.sourceCode pre.sourceCode,
+	code {
+		background: none !important;
+		border: none !important;
+	}
 }
