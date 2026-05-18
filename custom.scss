@@ -28,7 +28,7 @@ $font-weight-bold: 500;
 
 // LAYOUT
 
-body:not(:has(.quarto-listing)) {
+body:not(:has(.quarto-listing)):not(:has(.page-layout-full)) {
 	#quarto-margin-sidebar {
 		display: none;
 	}
@@ -53,13 +53,6 @@ div.quarto-post .listing-description {
 }
 .listing-description p {
 	margin-block-end: 0;
-}
-
-#title-block-header.quarto-title-block.default {
-	.quarto-title-meta-author,
-	.quarto-title-meta {
-		grid-template-columns: unset;
-	}
 }
 
 
@@ -93,8 +86,12 @@ p {
 	font: var(--toepassing-text-paragraph-default);
 }
 
+h1 {
+	margin-block-end: var(--toepassing-space-margin-xs) !important;
+}
+
 ul, ol {
-	padding: 0;
+	padding-inline-start: var(--toepassing-size-2xs);
 	::marker {
 		color: var(--toepassing-color-text-subtle-2);
 		font-size: var(--rijkshuisstijl-text-font-size-md);
@@ -217,10 +214,6 @@ body.nav-fixed {
   max-inline-size: 71.25rem;
 }
 
-.navbar-brand-container .navbar-brand {
-	pointer-events: none;
-	cursor: default;
-}
 .navbar-brand, .navbar .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
 	color: var(--toepassing-color-text-inverse);
 	font-size: var(--toepassing-text-size-body-lg);
@@ -230,7 +223,9 @@ body.nav-fixed {
 	text-decoration: var(--toepassing-text-decoration-hyperlink);
 }
 
-.aa-DetachedSearchButtonIcon {
+.aa-DetachedSearchButtonIcon,
+.aa-SubmitIcon,
+.autocomplete-0-input {
 	background-color: currentColor;
 	mask-image: url("/assets/icons/icon-zoek.svg");
 	mask-size: contain;
@@ -241,9 +236,6 @@ body.nav-fixed {
 	>* {
 		display: none;
 	}
-}
-.aa-SubmitButton {
-
 }
 
 
@@ -315,13 +307,26 @@ div.metadata a {
 .quarto-categories {
 	margin-block-end: var(--toepassing-space-margin-2xs);
 }
-#title-block-header>div.quarto-title-meta-author>div:nth-child(1) {
-	display: none;
+
+#title-block-header {
+	margin-block-end: 0;
+	&>div.quarto-title-meta-author>div:nth-child(1) {
+		display: none;
+	}
+	&>div.quarto-title-meta-author>div:nth-child(4) {
+		margin-block-end: var(--toepassing-space-margin-2xs);
+	}
+	&.quarto-title-block.default [class^=quarto-title-meta-] {
+		font-weight: var(--toepassing-text-font-weight-bold);
+	}
+	&.quarto-title-block.default {
+		.quarto-title-meta-author,
+		.quarto-title-meta {
+			grid-template-columns: unset;
+		}
+	}
 }
 
-#title-block-header>div.quarto-title-meta-author>div:nth-child(4) {
-	margin-block-end: var(--toepassing-space-margin-2xs);
-}
 #title-block-header.quarto-title-block.default [class^="quarto-title-meta-"],
 .quarto-title .quarto-categories .quarto-category,
 div.quarto-post .listing-categories .listing-category {
@@ -331,9 +336,7 @@ div.quarto-post .listing-categories .listing-category {
 	padding: 0;
 	text-transform: unset;
 }
-#title-block-header.quarto-title-block.default [class^=quarto-title-meta-] {
-	font-weight: var(--toepassing-text-font-weight-bold);
-}
+
 .quarto-title-block.default .quarto-category a,
 #listing-listing .listing-category {
 	background: var(--toepassing-color-background-subtle);
@@ -357,6 +360,58 @@ div.quarto-post .listing-categories .listing-category {
 
 #TOC>ul>li {
 	margin-block-end: var(--toepassing-space-margin-2xs);
+}
+
+
+// FORMULIER-ELEMENTEN
+
+button,
+[role="search"],
+[type="text"],
+.aa-Autocomplete .aa-Form,
+.aa-DetachedFormContainer .aa-Form {
+	background: var(--toepassing-color-interactive-default-surface);
+	border: var(--toepassing-border-width-md) solid var(--toepassing-color-interactive-default-border);
+	border-radius: var(--toepassing-border-radius-sm);
+	font: inherit;
+	transition: var(--toepassing-transition-default);
+	&:hover,
+	&:focus-visible {
+		border-color: var(--toepassing-color-interactive-hover-border);
+	}
+
+	&:active {
+		border-color: var(--toepassing-color-interactive-active-border);
+	}
+}
+
+button,
+.aa-DetachedCancelButton {
+	background: var(--toepassing-color-interactive-default-background);
+	color: var(--toepassing-color-text-inverse);
+	cursor: pointer;
+	font: inherit;
+	padding-block: var(--toepassing-space-padding-sm);
+	padding-inline: var(--toepassing-space-padding-md);
+	&:hover,
+	&:focus-visible {
+		background: var(--toepassing-color-interactive-hover-background);
+		border-color: var(--toepassing-color-interactive-hover-border);
+		color: var(--toepassing-color-text-inverse);
+	}
+
+	&:active {
+		background: var(--toepassing-color-interactive-active-background);
+		border-color: var(--toepassing-color-interactive-active-border);
+	}
+}
+
+.navbar .aa-DetachedSearchButton .aa-DetachedSearchButtonIcon {
+	color: var(--toepassing-color-text-inverse);
+}
+.aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-Label svg {
+	color: var(--toepassing-color-interactive-default-background);
+	opacity: 1;
 }
 
 

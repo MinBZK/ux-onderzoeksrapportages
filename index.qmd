@@ -1,0 +1,21 @@
+---
+title: "UX onderzoeksrapportages"
+description: "Onderzoeksrapporten van gebruikersonderzoek bij de Rijksoverheid."
+toc: false
+page-layout: full
+---
+
+Deze site verzamelt onderzoeksrapporten van gebruikersonderzoek bij de Rijksoverheid.
+
+Het doel is om rapportages eenvoudig online aan te bieden in plaats van als losse PDF's, zodat:
+
+- er altijd één actuele versie is
+- rapporten makkelijk vindbaar zijn via zoeken
+- ze gedeeld kunnen worden via een stabiele URL
+- updates direct zichtbaar zijn voor iedereen
+
+[Bekijk alle rapporten →](rapporten.qmd)
+
+## Voor onderzoekers
+
+Wil je zelf een rapport publiceren? Raadpleeg de [handleiding](handleiding.qmd).

@@ -1,10 +1,12 @@
 ---
-title: "UX onderzoeksrapportages"
+title: "Rapporten"
 toc: false
 listing:
   contents: rapporten
   type: default
-  sort: "date desc"
+  sort:
+    - "order"
+    - "date desc"
   categories: true
   fields: [date, title, description, author, categories]
   page-size: 20

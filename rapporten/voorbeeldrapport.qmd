@@ -120,7 +120,7 @@ Een korte fragment uit een sessie ter illustratie:
 Maak de primaire actie op het inlogscherm visueel onderscheidend van de overige tekst, zodat deelnemers direct herkennen waar zij moeten klikken.
 :::
 
-::: {.callout-note collapse title="Opmerking"}
+::: {.callout-note collapse="true" title="Opmerking"}
 Maak de primaire actie op het inlogscherm visueel onderscheidend van de overige tekst, zodat deelnemers direct herkennen waar zij moeten klikken.
 :::
 

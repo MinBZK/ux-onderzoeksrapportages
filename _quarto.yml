@@ -19,15 +19,16 @@ website:
   title: "UX onderzoeksrapportages"
   description: "Onderzoeksrapporten van gebruikersonderzoek bij de Rijksoverheid"
   navbar:
+    title: false
     background: primary
     pinned: true
     left:
       - href: index.qmd
+        text: UX onderzoeksrapportages
+      - href: rapporten.qmd
         text: Rapporten
       - href: handleiding.qmd
         text: Handleiding
-      - href: about.qmd
-        text: Over deze site
 
 format:
   html:
