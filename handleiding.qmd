@@ -1,5 +1,5 @@
 ---
-title: "Handleiding publiceren"
+title: "Publicatie handleiding"
 description: "Hoe schrijf en publiceer ik een nieuw rapport op deze site?"
 toc: true
 ---
@@ -208,6 +208,18 @@ Gebruik voor **scenario’s** of **use cases** — concrete gebruikssituaties di
 
 Gebruik voor **gebruikersreizen** — meerdere stappen die een gebruiker doorloopt.
 
+::: {.callout-requirement title="Voorwaarde: toegang met DigiD"}
+De gebruiker moet beschikken over een geldige DigiD en de zaak moet binnen 30 dagen na ontvangst van de aanslag worden ingediend.
+:::
+
+```markdown
+::: {.callout-requirement title="Voorwaarde: toegang met DigiD"}
+Tekst van de voorwaarde of randvoorwaarde.
+:::
+```
+
+Gebruik voor **(rand)voorwaarden** die voor het onderzoek of de oplossing gelden bijv. technische vereisten, juridische kaders of gebruikersvoorwaarden.
+
 ### Overzicht alle callouts
 
 | Callout | Wanneer gebruiken |
@@ -221,6 +233,7 @@ Gebruik voor **gebruikersreizen** — meerdere stappen die een gebruiker doorloo
 | `callout-question` | Onderzoeksvraag, openstaand punt |
 | `callout-usecase` | Scenario of use case |
 | `callout-userjourney` | End-to-end klantreis met stappen |
+| `callout-requirement` | (Rand)voorwaarde |
 
 ### Inklapbaar maken
 

@@ -299,6 +299,10 @@ main.content svg {
 	block-size: auto;
 }
 
+a[href^="https://www.samenwerkruimten.nl/"]::after {
+	content: "🔒";
+	margin-inline-start: var(--toepassing-space-layout-3xs);
+}
 
 // METADATA
 
@@ -414,7 +418,8 @@ div.callout-callout-userjourney.callout {
 	}
 }
 div.callout-important.callout,
-div.callout-callout-question.callout {
+div.callout-callout-question.callout,
+div.callout-callout-requirement.callout {
 	background: var(--toepassing-color-feedback-warning-subtle);
 	border-color: var(--toepassing-color-feedback-warning-border);
 	.callout-icon::before {
@@ -491,6 +496,21 @@ div.callout-warning.callout {
 }
 .glightbox-clean .gdesc-inner {
 	padding: var(--toepassing-space-padding-xs) var(--toepassing-space-padding-sm) !important;
+}
+
+
+// TABELLEN
+
+th {
+	vertical-align: top;
+}
+.table>:not(caption)>*>* {
+	border: var(--toepassing-border-subtle);
+}
+table caption {
+	caption-side: bottom;
+	font-size: var(--toepassing-text-size-body-md);
+	text-align: left;
 }
 
 

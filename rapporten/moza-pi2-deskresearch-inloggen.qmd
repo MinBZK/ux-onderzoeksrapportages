@@ -30,7 +30,7 @@ Desk-research naar inlog-middelen en -flows met als doel deze om te zetten naar 
 
 ### Zeewaardig onderzoek
 
-::: {.callout-quote title="Citaat: Ondernemer, MKB 10–50 medewerkers"}
+::: {.callout-quote title="Citaat Ondernemer, MKB 10–50 medewerkers"}
 “De overheid is zo ontzettend versnipperd. Pak er één plek of platform uit en maak dat het gewoon. Breng alle overheden bij elkaar.”
 :::
 
@@ -38,7 +38,7 @@ Desk-research naar inlog-middelen en -flows met als doel deze om te zetten naar 
 
 Inloggen op het juiste moment; inloggen wanneer nodig, bijvoorbeeld bij het zoeken van meer relevante info of het daadwerkelijk indienen van een aanvraag.
 
-::: {.callout-quote title="Citaat: Prototype Interview 23, MKB 10-50"}
+::: {.callout-quote title="Citaat Prototype Interview 23, MKB 10-50"}
 “Als ik gewoon aan het informeren ben, zou ik niet meteen inloggen… Als ik het echt wil aanvragen, dan zou ik wel inloggen…”
 :::
 
@@ -46,7 +46,7 @@ Inloggen op het juiste moment; inloggen wanneer nodig, bijvoorbeeld bij het zoek
 
 Toegankelijkheid bij eHerkenning. Niet alle ondernemers hebben overheidsorganisaties eHerkenning, waardoor de toegankelijke doelgroep beperkter is.
 
-::: {.callout-quote title="Citaat: Prototype Interview 4, ZZP’er"}
+::: {.callout-quote title="Citaat Prototype Interview 4, ZZP’er"}
 “En waarom moet ik elke keer met die E-Herkenning inloggen? Ik doe dat met DigiD”
 :::
 
@@ -77,25 +77,25 @@ Toegang vanaf overal (thuis, vakantie) door eenmalig inloggen
 
 Eenvoudig en veilig inloggen: Eén keer inloggen voor toegang tot alle diensten, veilige plek voor documenten.
 
-::: {.callout-quote title="Citaat: ZZP-er, sessie 1"}
+::: {.callout-quote title="Citaat ZZP-er, sessie 1"}
 Ik wil makkelijk bij mijn omgeving kunnen komen en kunnen inloggen.
 :::
 
 Vast aanspreekpunt: één keer inloggen voor toegang tot alle diensten, veilige plek voor documenten.
 
-::: {.callout-quote title="Citaat: MKB<10, sessie 2"}
+::: {.callout-quote title="Citaat MKB<10, sessie 2"}
 Ik heb behoefte aan een vast aanspreekpunt binnen de overheid voor ondernemerszaken.
 :::
 
 Eén keer inloggen: Eén inlog, één website en één klik om toegang te krijgen tot alle diensten, evt. met MijnOverheid als startpunt.
 
-::: {.callout-quote title="Citaat: MKB 10-25, sessie 4"}
+::: {.callout-quote title="Citaat MKB 10-25, sessie 4"}
 MijnOverheid als startpunt, waar ik vanuit 1 inlog, 1 website en 1 click aan de slag kan.
 :::
 
 Gemakkelijk startpunt: Eenvoudige toegang, bijvoorbeeld via een QR-code.
 
-::: {.callout-quote title="Citaat: ZZP-er, sessie 1"}
+::: {.callout-quote title="Citaat ZZP-er, sessie 1"}
 Een makkelijk startpunt waar ik niet lang naar hoef te zoeken en mij doorverwijst naar de omgeving waar ik moet inloggen, zoals bijvoorbeeld een QR code.
 :::
 
@@ -111,13 +111,13 @@ Ondernemers konden via een knop en inlog de gegevens van het KVK uittreksel opha
 
 Inloggen op het juiste moment. Alleen inloggen wanneer nodig, bijvoorbeeld bij het daadwerkelijk indienen van een aanvraag.
 
-::: {.callout-quote title="Citaat: Prototype Interview 23, ZZP’er"}
+::: {.callout-quote title="Citaat Prototype Interview 23, ZZP’er"}
 Als ik gewoon aan het informeren ben, zou ik niet meteen inloggen…
 :::
 
 Niet alle ondernemers hebben eHerkenning.
 
-::: {.callout-quote title="Citaat: ZZP-er, sessie 1"}
+::: {.callout-quote title="Citaat ZZP-er, sessie 1"}
 En waarom moet ik elke keer met die E-Herkenning inloggen? Ik doe dat met DigiD
 :::
 
@@ -315,11 +315,11 @@ Redenen om de gegevens niet op MijnOverheid te willen zien:
 - Ook geven mensen aan dat ze gewend zijn aan het feit dat hun gegevens bij de Kamer van Koophandel staan en dat dat prima is.
 - Men verwacht de KvK gegevens te vinden op MijnOverheid op een plek die binnen hun eigen context valt. Als men het niet met werk associeert, zal dat voor hen niet de eerste plek zijn waar zij de gegevens verwachten. Zo zien we bij alle drie de groepen de ingang 'Identiteit' terugkomen. (Ze koppelen hun rol aan hun identiteit).
 
-::: {.callout-quote title="Citaat: "}
-55% van ondernemers met een bestuursfunctie wil deze gegevens gescheiden houden.
-:::
+**55% van ondernemers met een bestuursfunctie wil deze gegevens gescheiden houden.**
 
-- Grootste groep ondernemers EN bestuurders willen gegevens gescheiden houden (55%). 26% wil de gegevens bij elkaar zien. 19% heeft geen voorkeur.
+- De grootste groep ondernemers én bestuurders willen gegevens gescheiden houden (55%)
+- 26% wil de gegevens bij elkaar zien
+- 19% heeft geen voorkeur
 
 Een deel van bestuursleden vindt vrijwilligerswerk geen werk en zou het dus niet onder WERK in Mo verwachten.
 
@@ -388,6 +388,159 @@ Een starter ervaart het beginnen van een onderneming als relatief eenvoudig. Ech
 ::: {.callout-userjourney}
 Ik wil voor mezelf beginnen.
 :::
+
+---
+
+## Gebruikersonderzoek prototype MijnOverheid Zakelijk (MOZa) augustus 2025
+
+Onderzoek naar eerste prototype van MOZa-portaal als concept.
+
+**Slechts één keer inloggen en daarna toegang hebben tot alle overheidsorganisaties** wordt door ondernemers gezien als het grootste voordeel. Bijna iedereen noemde dit als belangrijkste functionaliteit, omdat je in de huidige situatie constant opnieuw, en op verschillende manieren, moet inloggen bij verschillende overheidsorganisaties en dat geeft frustratie. Voor het inloggen gebruiken zij eHerkenning, DigiD of boekhoudsoftware en hechten naast gemak ook veel waarde aan veiligheid, zoals twee factorauthenticatie.
+
+::: {.callout-quote title="Citaat MKB 10–30 medewerkers"}
+Ik begin er niet eens aan als ik 22 keer moet inloggen.
+:::
+
+::: {.callout-quote title="Citaat MKB 10–30 medewerkers"}
+Subsidieaanvraag doe ik met e-Herkenning en Belastingdienst met Digid.
+:::
+
+Op basis van het huidige prototype zijn de belangrijkste functionaliteiten voor ondernemers:
+- slechts één keer inloggen, 
+- wisselen tussen ondernemingen, en 
+- een duidelijk overzicht van lopende zaken en statusupdates
+
+Ook contacten communicatievoorkeuren spelen een belangrijke rol: ondernemers willen zelf bepalen via welk kanaal zij berichten ontvangen en wie binnen hun organisatie welke informatie mag zien. Hier zit ook een risico: te algemeen ingestelde rollen of machtigingen kunnen zorgen voor fouten of privacy-issues (bijvoorbeeld een accountant die boetes van een bedrijf te zien krijgt).
+
+::: {.callout-requirement}
+Eén keer inloggen voor toegang tot ál je overheidszaken.
+:::
+
+::: {.callout-requirement}
+Eén keer inloggen om al je ondernemingen te zien. (Kunnen switchen tussen ondernemingen zonder opnieuw in te loggen.)
+:::
+
+::: {.callout-usecase}
+Een ondernemer met meerdere ondernemingen (KvK inschrijvingen) moet snel uitkomen bij de juiste onderneming.
+:::
+
+### Bronnen
+
+- [MOZa notificatieservice - Ontwerpend onderzoek: de belangrijkste inzichten (Samenwerkruimte)](https://www.samenwerkruimten.nl/teamsites/programma%20mijnoverheid%20voor%20ondernemers/Gedeelde%20%20documenten/03%20-%20Programma%20inhoudelijke%20documenten/01%20-%20Gebruikersonderzoeken%20en%20input/01%20-%20Onderzoeken/01%20-%20Juli%202025/Onderzoek%20inzichten%20MOZa%20(gesprekken%20met%20ZZP%27ers%20en%20MKB%27ers)_juli%202025_UX%20Research.pdf)
+
+---
+
+## Ontwerpend onderzoek: de belangrijkste inzichten (juli 2025)
+
+In Q2 2025 zijn er 3 verkennende onderzoeken gedaan naar hoe ondernemers hun zaken op dit regelen en vooral hoe ze op de hoogte blijven van wat er moet gebeuren. Met 3 verschillende doelgroepen: ZZP, MKB tot 10 m/v personeel, MKB tot 30 M/V personeel.
+
+### Pijnpunten
+
+- Ondernemers moeten op veel verschillende plekken inloggen bij de overheid, wat verwarrend en tijdrovend is. 
+- Inloggen met eHerkenning is duur en ingewikkeld, vooral bij meerdere BV’s of kleine ondernemingen.
+
+### Behoeften
+
+- Eenvoudige en uniforme digitale toegang
+
+::: {.callout-quote title="MKB'er tot 50 medewerker"}
+Als ik berichten moet lezen van de overheid, ben ik voor mijn gevoel 10 minuten kwijt door alleen al het inloggen.” – ZZP’er 
+"Wat ik nu vervelend vind, is dat er voor elke dienst een andere manier van inloggen is, of andere drempels die worden opgelegd en het niet uniform gemaakt kan worden.
+:::
+
+### Bronnen
+
+- [Gebruikersonderzoek prototype MijnOverheid Zakelijk (MOZa) 27 – 29 augustus 2025 (Samenwerkruimte)](https://www.samenwerkruimten.nl/teamsites/programma%20mijnoverheid%20voor%20ondernemers/Gedeelde%20%20documenten/03%20-%20Programma%20inhoudelijke%20documenten/01%20-%20Gebruikersonderzoeken%20en%20input/01%20-%20Onderzoeken/01%20-%20Aug%202025/Rapportage%20usability%20onderzoek%20inzichten%20MOZa%20(gesprekken%20met%20MKB%27ers)_augustus%202025_UX%20Research.pdf)
+
+---
+
+## Gebruikersonderzoek MOZa prototype - oktober 2025
+
+![Gebruikersonderzoek MOZa prototype - oktober 2025](../assets/images/gebruikersonderzoek-moza-prototype-oktober2025.png)
+
+---
+
+## Doel: Inzicht geven in inlogscenario’s (burger & ondernemer) om startpagina en CTA’s te ontwerpen
+
+Er dient onderscheid te worden gemaakt tussen MijnOverheid als persoonlijke omgeving voor burgers en MijnOverheid Zakelijk als zakelijke omgeving voor ondernemers, organisaties en vertegenwoordigers die namens een organisatie handelen.
+
+### Vragen:
+
+- Hebben burgers last van dat linkje naar mijn overheid zakelijk?  
+- Hoe kom je van overheid.nl als burger/ondernemers op een startpagina die voor jou relevant is? 
+
+### Doelgroep
+
+UX designers, 'gespreksartifact'.
+
+### Output
+
+10 use cases, einde van de middag. 
+
+### Input
+
+Bestaande onderzoeksrapporten + eigen inzichten/inschattingen van de UX researchers over gebruikers.
+
+### Hypothese
+
+Waarschijnlijk twee hoofdroutes, persoonlijk en namens organisatie, een individu heeft voldoende zelfherkenning om hierin een keuze te maken.
+
+::: {.callout-caution}
+Risico is wel dat bij mensen met meerdere petten en bij bestuurders van vereniging die zichzelf niet herkennen in alleen het woord “ondernemer” → iets om op te letten in de UX.
+:::
+
+### Bronnen
+
+- [Logius | Stijlhandleiding aansluiten Toegang](https://www.logius.nl/onze-dienstverlening/toegang/stijlhandleiding-aansluiten-toegang)
+- [Uniform inloggen (Figma)](https://www.figma.com/design/ITZNAyD8A5VyNsW0JGMm9o/Uniform-inloggen?node-id=63-2411&t=iA475WqWMLkUBPFn-1)
+- G-schrijf enquetes MO KVK (2023)
+- Belastingsdienst
+- Zeewaardig onderzoek
+- Machtigen, metaonderzoek
+
++--------------------+-----------------+------------------------------+----------------------------+-------------------------------------+
+| Gebruikerstcontext | Handelt…        | Hoofdtaak/reden van inloggen | Huidige situatie startpunt | Verwachte startpunt(en)             |
++====================+=================+==============================+============================+=====================================+
+| Burger             | privé           | Persoonlijke context,        | Hoofdroute:                | Hoofdroute:                         |
+|                    |                 | eigen post,                  | [mijnoverheid.nl][1]       |                                     |
+|                    |                 | eigen gegevens               |                            |                                     |
+|                    |                 |                              | Subroute:                  | Subroute:                           |
+|                    |                 | Verwacht MijnOverheid        | [overheid.nl][2]           |                                     |
+|                    |                 | en DigiD                     |                            |                                     |
++--------------------+-----------------+------------------------------+----------------------------+-------------------------------------+
+| Burger             | privé,          | Persoonlijke context         |                            |                                     |
+|                    | namens een ander| van een ander,               |                            |                                     |
+|                    |                 | eigen post,                  |                            |                                     |
+|                    |                 | eigen gegevens.              |                            |                                     |
+|                    |                 |                              |                            |                                     |
+|                    |                 | Verwacht MijnOverheid        |                            |                                     |
+|                    |                 | en DigiD.                    |                            |                                     |
++--------------------+-----------------+------------------------------+----------------------------+-------------------------------------+
+| Burger met         | privé en        | Iemand kan privé-burger      |                            |                                     |
+| meerdere petten    | zakelijk        | zijn en tegelijk             |                            |                                     |
+|                    |                 | bestuurder, ondernemer       |                            |                                     |
+|                    |                 | of gemachtigde.              |                            |                                     |
+|                    |                 |                              |                            |                                     |
+|                    |                 | Schakelt tussen              |                            |                                     |
+|                    |                 | persoonlijke en              |                            |                                     |
+|                    |                 | zakelijke context.           |                            |                                     |
++--------------------+-----------------+------------------------------+----------------------------+-------------------------------------+
+| Ondernemer         | eigen bedrijf   |                              |                            |                                     |
++--------------------+-----------------+------------------------------+----------------------------+-------------------------------------+
+| Werknemers van een | namens bedrijf  |                              |                            |                                     |
+| ondernemer.        |                 |                              |                            |                                     |
++--------------------+-----------------+------------------------------+----------------------------+-------------------------------------+
+| Intermediair       | namens klant    |                              |                            |                                     |
++--------------------+-----------------+------------------------------+----------------------------+-------------------------------------+
+| Lid vereniging     | namens een      |                              |                            |                                     |
+|                    | rechtspersoon   |                              |                            |                                     |
+|                    | of bestuur      |                              |                            |                                     |
++--------------------+-----------------+------------------------------+----------------------------+-------------------------------------+
+
+: Overzicht gebruikerscontexten
+
+[1]: https://mijn.overheid.nl/
+[2]: https://overheid.nl/
 
 ---
 

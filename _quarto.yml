@@ -74,6 +74,11 @@ format:
         color: ""
         icon-symbol: "✈️"
         collapse: false
+      callout-requirement:
+        title: "Voorwaarde"
+        color: ""
+        icon-symbol: "☑️"
+        collapse: false
     filters:
       - custom-callout
 
