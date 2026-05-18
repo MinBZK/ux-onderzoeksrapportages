@@ -1,9 +1,9 @@
 ---
 title: "MOZa - PI2 Deskresearch Inloggen"
 description: "Desk-research naar inlog-middelen en -flows met als doel deze om te zetten naar testbare deliverables."
-author: "Lorem Ipsum"
+author: ""
 date: "2026-05-07"
-date-modified: "2026-05-11"
+date-modified: last-modified
 categories:
 - usability
 - prototype
@@ -13,44 +13,29 @@ categories:
 - inloggen
 ---
 
-## Samenvatting
-
-Desk-research naar inlog-middelen en -flows met als doel deze om te zetten naar testbare deliverables.
-
-## Onderzoeksvraag
-
-## Methode
-
-- **Type onderzoek:** desk research
-- **Aantal deelnemers:**
-- **Periode:**
-- **Materiaal:**
-
-## Bevindingen
-
-### Zeewaardig onderzoek
+## Zeewaardig onderzoek
 
 ::: {.callout-quote title="Citaat Ondernemer, MKB 10–50 medewerkers"}
-“De overheid is zo ontzettend versnipperd. Pak er één plek of platform uit en maak dat het gewoon. Breng alle overheden bij elkaar.”
+De overheid is zo ontzettend versnipperd. Pak er één plek of platform uit en maak dat het gewoon. Breng alle overheden bij elkaar.
 :::
 
-#### Waardering functionaliteit
+### Waardering functionaliteit
 
 Inloggen op het juiste moment; inloggen wanneer nodig, bijvoorbeeld bij het zoeken van meer relevante info of het daadwerkelijk indienen van een aanvraag.
 
 ::: {.callout-quote title="Citaat Prototype Interview 23, MKB 10-50"}
-“Als ik gewoon aan het informeren ben, zou ik niet meteen inloggen… Als ik het echt wil aanvragen, dan zou ik wel inloggen…”
+Als ik gewoon aan het informeren ben, zou ik niet meteen inloggen… Als ik het echt wil aanvragen, dan zou ik wel inloggen…
 :::
 
-#### Dit wordt nog gemist als functionaliteit
+### Dit wordt nog gemist als functionaliteit
 
 Toegankelijkheid bij eHerkenning. Niet alle ondernemers hebben overheidsorganisaties eHerkenning, waardoor de toegankelijke doelgroep beperkter is.
 
 ::: {.callout-quote title="Citaat Prototype Interview 4, ZZP’er"}
-“En waarom moet ik elke keer met die E-Herkenning inloggen? Ik doe dat met DigiD”
+En waarom moet ik elke keer met die E-Herkenning inloggen? Ik doe dat met DigiD.
 :::
 
-#### Wat ervaren ondernemers als positief
+### Wat ervaren ondernemers als positief
 
 Kunnen inloggen met eHerkenning uit naam van bedrijf i.p.v. privé. 
 
@@ -66,14 +51,14 @@ Hun behoeftes:
 
 Mkb’ers (10-25) hebben dit als input gegeven bij een co-creatiesessie: één inlog Centraal digitaal loket
 
-#### Co-creatiesessie met starters
+### Co-creatiesessie met starters
 
 Toegang vanaf overal (thuis, vakantie) door eenmalig inloggen
 
 - toekomstgerichte en positieve ervaring
 - samenwerking tussen Belastingdienst en ondernemers
 
-#### Ondernemers willen:
+### Ondernemers willen:
 
 Eenvoudig en veilig inloggen: Eén keer inloggen voor toegang tot alle diensten, veilige plek voor documenten.
 
@@ -99,15 +84,15 @@ Gemakkelijk startpunt: Eenvoudige toegang, bijvoorbeeld via een QR-code.
 Een makkelijk startpunt waar ik niet lang naar hoef te zoeken en mij doorverwijst naar de omgeving waar ik moet inloggen, zoals bijvoorbeeld een QR code.
 :::
 
-#### Filteren op uw situatie
+### Filteren op uw situatie
 
 Ondernemers konden in het prototype inloggen om op basis van de beschikbare in het profiel van MijnOnderneming een overzicht van subsidies te laten filteren op basis van hun situatie.
 
-#### KVK data delen
+### KVK data delen
 
 Ondernemers konden via een knop en inlog de gegevens van het KVK uittreksel ophalen zonder dit document te moeten downloaden en ophalen.
 
-#### Goede punten uit het prototype
+### Goede punten uit het prototype
 
 Inloggen op het juiste moment. Alleen inloggen wanneer nodig, bijvoorbeeld bij het daadwerkelijk indienen van een aanvraag.
 
@@ -121,13 +106,13 @@ Niet alle ondernemers hebben eHerkenning.
 En waarom moet ik elke keer met die E-Herkenning inloggen? Ik doe dat met DigiD
 :::
 
-#### Aansluiten op bestaande publieke platforms
+### Aansluiten op bestaande publieke platforms
 
 Sluit aan op wat mensen al kennen en gebruiken, zoals bestaande websites en processen in plaats van alles opnieuw te ontwerpen.
 
-#### Soort ‘driehoeksrelatie’ tussen overheid, ondernemer en intermediair
+### Soort ‘driehoeksrelatie’ tussen overheid, ondernemer en intermediair
 
-#### Use cases
+### Use cases
 
 ::: {.callout-usecase title="Use case 1"}
 Burger wilt snel naar persoonlijke omgeving (MO), klikt vanaf overheid.nl naar MijnOverheid Zakelijk CTA, ontvangt ‘*herstelroute*’.
@@ -155,13 +140,13 @@ Ondernemer in het buitenland wilt inloggen op MijnOverheid Zakelijk
 
 ---
 
-### Belastingdienst onderzoek inlog-flow
+## Belastingdienst onderzoek inlog-flow
 
-#### Centrale onderzoeksvraag
+### Centrale onderzoeksvraag
 
 Gegeven het feit dat er verschillende rollen (zelf, zzp, eenmanszaak, bedrijf, organisatie + fiscale eenheid en zelfstandig bevoegd bestuurder) zijn, biedt de opbouw van het inlogscherm (ook via de digitale wallet) dan voor alle doelgroepen (burgers, ondernemers en intermediairs; zonder voorkennis) voldoende duidelijkheid om op intuïtieve wijze makkelijk en correct in te loggen  in de omgevingen van de Belastingdienst?
 
-#### Deelvragen
+### Deelvragen
 
 1. Is het begin van de klantreis logisch, dus vanaf de keuze van het juiste portaal?
 2. Zijn de labels voor de gebruikte rollen duidelijk, herkenbaar en aanspreekbaar? Helpen ze bij het begeleiden van de veelheid aan doelgroepen en situaties?
@@ -181,7 +166,7 @@ Met KVK nummer kijken hoe je kunt inloggen. Term eenmanszaak werkt prima voor zz
 
 Inloggen voor iemand anders.
 
-#### Use cases
+### Use cases
 
 ::: {.callout-usecase title="Use case 1"}
 Ondernemer kiest verkeerde inlog (Belastingdienst i.p.v. Belastingdienst Zakelijk) omdat hij/zij dat gewend is.
@@ -223,9 +208,9 @@ Ondernemer zoekt hoe hij kan inloggen aan de hand van KVK-nummer, via KVK pagina
 
 ---
 
-### Belastingdienst gebruikerstest Inloggen met DigiD
+## Belastingdienst gebruikerstest Inloggen met DigiD
 
-#### Scenario’s A en B
+### Scenario’s A en B
 
 ![Scenario’s A en B Stap 1: Naar inloggen](../assets/images/inloggen-digid-01-scenario-a-b-stap-1.png)
 
@@ -237,25 +222,25 @@ Ondernemer zoekt hoe hij kan inloggen aan de hand van KVK-nummer, via KVK pagina
 
 ![Scenario’s A en B KVK-nummer invullen](../assets/images/inloggen-digid-05-scenario-a-b-kvk-nummer-invullen.png)
 
-#### Scenario D
+### Scenario D
 
 ![Scenario D Wat heeft de voorkeur?](../assets/images/inloggen-digid-06-scenario-d-voorkeur.png)
 
-#### Scenario E
+### Scenario E
 
 ![Scenario E Wat heeft de voorkeur?](../assets/images/inloggen-digid-07-scenario-e-voorkeur.png)
 
 ---
 
-###  Belastingdienst Inloggen publiek zakelijk
+##  Belastingdienst Inloggen publiek zakelijk
 
-#### Beantwoording onderzoeksvraag
+### Beantwoording onderzoeksvraag
 
 - De meeste deelnemers loggen probleemloos in met DigiD, maar waren dit al gewend.
 - Het ontwerp begeleidt deelnemers die gewend zijn aan eHerkenning niet goed naar de nieuwe inlog-methode.
 - Als deelnemers in de DigiD-flow zitten, identificeren ze zich met eenmanszaak (in geval van eenmanszaken met personeel) of met de optie over volledige tekenbevoegdheid. De keuze voor deze  laatste optie is negatief: ik ben geen zzp'er of eenmanszaak, dus ik moet dit kiezen.
 
-#### Verder onderzoeken
+### Verder onderzoeken
 
 Kijk hoe je het nieuws over de nieuwe inlog naar buiten kunt brengen. Misschien is er ook een samenwerking met de Kamer van Koophandel mogelijk (nieuwsbrief, infopakket voor nieuwe ondernemers (met de juiste bedrijfsvorm)).
 
@@ -263,7 +248,7 @@ Onderzoek hoe je de gewoonte beter kan doorbreken.
 
 Onderzoek of het duidelijker te maken valt voor wie eHerkenning dan is, of voor wie het nieuwe inlog-middel is (met nog herkenbaardere bedrijfsvormen of definities).
 
-#### Verder onderzoeken n.a.v. de gehele context rondom inloggen
+### Verder onderzoeken n.a.v. de gehele context rondom inloggen
 
 Vrijwel alle respondenten maakten geen gebruik van de inlog-optie rechtsboven op het scherm, maar geven aan er normaal
 gezien nooit last van te hebben. Ze gebruiken bookmarks of linkjes, of gaan via een andere weg.
