@@ -10,7 +10,13 @@
       "Bash(xargs -I{} kill -9 {})",
       "Bash(curl -s http://localhost:6081/)",
       "Bash(curl -s http://localhost:6081/ -o /tmp/uxor-index.html)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(git log *)",
+      "Bash(git stash *)",
+      "Bash(git checkout *)",
+      "Bash(git merge *)",
+      "Bash(git push *)",
+      "Bash(git branch *)"
     ]
   }
 }

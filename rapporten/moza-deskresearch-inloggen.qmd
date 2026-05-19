@@ -1,5 +1,5 @@
 ---
-title: "MOZa - PI2 Deskresearch Inloggen"
+title: "MijnOverheid Zakelijk - Deskresearch Inloggen"
 description: "Desk-research naar inlog-middelen en -flows met als doel deze om te zetten naar testbare deliverables."
 author: ""
 date: "2026-05-07"
