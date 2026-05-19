@@ -12,8 +12,11 @@ WORKDIR /src
 # Copy project sources
 COPY . .
 
-# Render site to _site/
-RUN quarto render --output-dir _site
+# Render site to _site/ (HTML only — PDF/Typst vereist netwerk-toegang voor packages)
+RUN quarto render --to html --output-dir _site
+
+# Kopieer pre-gerenderde PDFs naast HTML (gerendered lokaal, gecommit in assets/pdf/)
+RUN cp -r /src/assets/pdf/. /src/_site/ 2>/dev/null || true
 
 # ---------- Runtime stage: serve via nginx (non-root) ----------
 FROM nginxinc/nginx-unprivileged:1.27-alpine AS runtime
