@@ -4,9 +4,13 @@ description: "Hoe schrijf en publiceer ik een nieuw rapport op deze site?"
 toc: true
 ---
 
-Dit platform maakt gebruik van [Quarto](https://quarto.org/), een open-source publicatie systeem. Het biedt de mogelijkheid om diverse ondersteunende dingen toe te voegen zoals afbeeldingen, video, diagrammen, ‘[*callouts*](#callouts)’ en tabellen.
+Deze site is een **eerste stap** naar een platform waar UX-onderzoekers hun rapporten zelf kunnen publiceren, en waar dezelfde bron op meerdere kanalen kan verschijnen, zoals [gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl/) en interne kennisplatforms van organisaties.
 
-Deze handleiding helpt je op weg om een gebruikersonderzoek te publiceren. Alles is geschreven in [Markdown](https://www.markdownguide.org/), een eenvoudige standaard tekstopmaak. Je hoeft niets te programmeren.
+Op termijn komt er een **WYSIWYG-editor** zodat je rapporten kunt schrijven zonder kennis van code of Markdown. In de tussentijd werk je met Markdown, een eenvoudige, leesbare tekstopmaak die je in elke editor kunt schrijven.
+
+Onder de motorkap draait het op [Quarto](https://quarto.org/), een open-source publicatiesysteem dat ondersteuning biedt voor afbeeldingen, video, diagrammen, ‘[*callouts*](#callouts)’ en tabellen.
+
+Deze handleiding helpt je op weg om een gebruikersonderzoek te publiceren. Je hoeft niets te programmeren.
 
 ## Snelstart
 
@@ -14,7 +18,7 @@ Deze handleiding helpt je op weg om een gebruikersonderzoek te publiceren. Alles
 2. Open het bestand in een teksteditor
 3. Pas de *[frontmatter](#frontmatter)* bovenaan aan (titel, auteur, datum, onderwerpen).
 4. Schrijf je rapport in markdown.
-5. Commit en push naar `main` — de site bouwt automatisch en publiceert.
+5. Commit en push naar `main`; de site bouwt automatisch en publiceert.
 
 ::: {.callout-tip title="Bekijk het voorbeeldrapport"}
 [rapporten/voorbeeldrapport.qmd](rapporten/voorbeeldrapport.qmd) toont alle bouwstenen zoals callouts, tabs, tabellen, video, mermaid-diagrammen.
@@ -178,17 +182,17 @@ Onderzoeksvraag of openstaande vraag voor vervolgonderzoek.
 
 Gebruik voor **onderzoeksvragen**, deelvragen of openstaande vraagstukken die nog uitgezocht moeten worden.
 
-::: {.callout-usecase title="Use case 1 — Eerste inlog op mobiel"}
+::: {.callout-usecase title="Use case 1: Eerste inlog op mobiel"}
 Een nieuwe gebruiker opent de app voor het eerst op een mobiel apparaat en ziet het inlogscherm. Zij herkent de primaire actie niet als knop en tikt eerst op de uitleg-tekst.
 :::
 
 ```markdown
-::: {.callout-usecase title="Use case 1 — Eerste inlog op mobiel"}
+::: {.callout-usecase title="Use case 1: Eerste inlog op mobiel"}
 Scenario-beschrijving: wie, wat, in welke context.
 :::
 ```
 
-Gebruik voor **scenario’s** of **use cases** — concrete gebruikssituaties die je in het onderzoek hebt onderzocht.
+Gebruik voor **scenario’s** of **use cases**, concrete gebruikssituaties die je in het onderzoek hebt onderzocht.
 
 ::: {.callout-userjourney title="Klantreis: aanvraag indienen"}
 1. Gebruiker zoekt informatie via Google → komt op overheid.nl
@@ -206,7 +210,7 @@ Gebruik voor **scenario’s** of **use cases** — concrete gebruikssituaties di
 :::
 ```
 
-Gebruik voor **gebruikersreizen** — meerdere stappen die een gebruiker doorloopt.
+Gebruik voor **gebruikersreizen**, meerdere stappen die een gebruiker doorloopt.
 
 ::: {.callout-requirement title="Voorwaarde: toegang met DigiD"}
 De gebruiker moet beschikken over een geldige DigiD en de zaak moet binnen 30 dagen na ontvangst van de aanslag worden ingediend.
@@ -277,10 +281,10 @@ flowchart LR
 
 **Veel gebruikte Mermaid-types**:
 
-- `flowchart LR` — links-naar-rechts flow
-- `flowchart TB` — boven-naar-onder flow
-- `sequenceDiagram` — interactie tussen actoren
-- `journey` — user journey map
+- `flowchart LR`: links-naar-rechts flow
+- `flowchart TB`: boven-naar-onder flow
+- `sequenceDiagram`: interactie tussen actoren
+- `journey`: user journey map
 
 Volledige documentatie: [Mermaid syntax](https://mermaid.js.org/intro/).
 
@@ -371,7 +375,7 @@ In een terminal:
 quarto preview
 ```
 
-Opent een browser-tab die elke save automatisch herlaadt — handig om in real-time te zien hoe je rapport eruit komt te zien.
+Opent een browser-tab die elke save automatisch herlaadt, dit is handig om in real-time te zien hoe je rapport eruit komt te zien.
 :::
 
 ## Veelvoorkomende fouten

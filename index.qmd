@@ -5,17 +5,19 @@ toc: false
 page-layout: full
 ---
 
-Deze site verzamelt onderzoeksrapporten van gebruikersonderzoek bij de Rijksoverheid.
+Deze site verzamelt onderzoeksrapporten van gebruikersonderzoek bij de Rijksoverheid op één plek. De ambitie: onderzoek niet meer als losse PDF, maar als open, herbruikbare bron die op meerdere kanalen — zoals deze site, [gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl/) en intranetten — uit dezelfde bron getoond kan worden.
 
-Het doel is om rapportages eenvoudig online aan te bieden in plaats van als losse PDF's, zodat:
+Per rapport geldt:
 
-- er altijd één actuele versie is
-- rapporten makkelijk vindbaar zijn via zoeken
-- ze gedeeld kunnen worden via een stabiele URL
-- updates direct zichtbaar zijn voor iedereen
+- één actuele versie, altijd en overal
+- vindbaar via zoeken en categorieën
+- deelbaar via een stabiele URL
+- updates direct zichtbaar voor iedereen
 
 [Bekijk alle rapporten →](rapporten.qmd)
 
 ## Voor onderzoekers
 
-Wil je zelf een rapport publiceren? Raadpleeg de [handleiding](handleiding.qmd).
+Op termijn komt er een **WYSIWYG-editor** waarmee je zelf onderzoeken kunt publiceren — zonder kennis van Markdown of Git. Voor nu schrijf je rapporten in Markdown, met een [handleiding](handleiding.qmd) als startpunt.
+
+Dezelfde bron wordt automatisch hergebruikt door andere publicatiekanalen, dus je hoeft je onderzoek maar één keer te schrijven.
