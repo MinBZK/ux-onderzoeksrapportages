@@ -18,7 +18,8 @@
       "Bash(git push *)",
       "Bash(git branch *)",
       "Bash(cp _site/*.pdf assets/pdf/)",
-      "Bash(cp _site/rapporten/*.pdf assets/pdf/rapporten/)"
+      "Bash(cp _site/rapporten/*.pdf assets/pdf/rapporten/)",
+      "Bash(git -C /Users/rogierbarendregt/Documents/GitHub/ux-onderzoeksrapportages remote -v)"
     ]
   }
 }

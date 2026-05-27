@@ -18,6 +18,9 @@ language:
 website:
   title: "UX onderzoeksrapportages"
   description: "Onderzoeksrapporten van gebruikersonderzoek bij de Rijksoverheid"
+  repo-url: https://github.com/MinBZK/ux-onderzoeksrapportages
+  repo-branch: main
+  repo-actions: [edit]
   navbar:
     title: false
     background: primary
@@ -39,10 +42,28 @@ format:
     include-after-body:
       - text: |
           <script>
-            // injecteer PDF-link in sidebar
-            const link = document.querySelector('.sidebar nav[role="doc-toc"]');
-            if (link) link.insertAdjacentHTML('afterend', 
-              `<div class="pdf-link"><a href="${location.pathname.replace('.html','.pdf')}">Download als PDF</a></div>`);
+            const isRapport = /\/rapporten\//.test(location.pathname);
+            const editBlock = document.querySelector('.quarto-edit-meta, .toc-actions');
+            if (!isRapport && editBlock) {
+              editBlock.remove();
+            }
+            if (isRapport) {
+              const iconBase = '/assets/icons';
+              const svg = (file, alt) => `<img src="${iconBase}/${file}" alt="" aria-hidden="true" class="toc-action-icon" width="16" height="16">`;
+              // herlabel "Pagina bewerken" -> "Bewerk dit rapport"; vervang Bootstrap-icoon door SVG
+              document.querySelectorAll('.toc-actions a.toc-action').forEach(a => {
+                a.innerHTML = `${svg('logo-github.svg')} Bewerk dit rapport op GitHub`;
+              });
+              const pdfHref = location.pathname.replace('.html', '.pdf');
+              const repoNew = 'https://github.com/MinBZK/ux-onderzoeksrapportages/new/main/rapporten';
+              const extraItems = `
+                <li><a href="${repoNew}" class="toc-action" target="_blank" rel="noopener">${svg('logo-github.svg')} Maak een nieuw rapport</a></li>
+                <li><a href="${pdfHref}" class="toc-action">${svg('icon-filetype-pdf.svg')} Download als PDF</a></li>
+              `;
+              document.querySelectorAll('.toc-actions ul').forEach(ul => {
+                ul.insertAdjacentHTML('beforeend', extraItems);
+              });
+            }
           </script>
     mermaid:
       theme: default

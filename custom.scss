@@ -368,6 +368,18 @@ div.quarto-post .listing-categories .listing-category {
 	margin-block-end: var(--toepassing-space-margin-2xs);
 }
 
+.sidebar .toc-actions>ul {
+	font-size: inherit;
+}
+
+.toc-action {
+	img {
+		block-size: var(--toepassing-size-icon-md);
+		inline-size: var(--toepassing-size-icon-md);
+		margin-inline-end: var(--toepassing-space-layout-2xs);
+	}
+}
+
 
 // FORMULIER-ELEMENTEN
 
